@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reviews</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="data.js"></script>
+  <script src="reviews.js"></script>
+ 
+</head>
+<body>
+
+  <div class="header">
+
+    <nav>
+     <img src="images/logo.png">
+     <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+            <li><a href="info.html">Info</a></li>
+        <li><a href="review.html">Review</a> </li>
+    
+            </ul>
+    </nav>
+
+    <div id="reviews">
+    </div>
+    <h1 style="text-align: center; padding-top:30px;">Post your Review Here</h1>
+    <div id="review-form">
+      <form onsubmit="addReview(); return false;">
+        <label>Name: <input type="text" id="name" /></label><br />
+        <label>Date: <input type="date" id="date" /></label><br />
+        <label>Rating (1-5): <input type="number" min="1" max="5" id="rating" /></label><br />
+        <label>Review: <input type="text" id="review" /></label><br />
+        <input type="submit" value="Create" />
+      </form>
+    </div>
+  </div>
+  
+</body>
+</html>
+
+
